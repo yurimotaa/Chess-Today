@@ -27,7 +27,7 @@ function changePages(){
     })
 
     puzzlesBtn.addEventListener("click", ()=>{
-        window.location.replace("/src/pages/puzzles.html")
+        window.location.replace("/src/pages/puzzle.html")
     })
 
     aboutBtn.addEventListener("click", ()=>{
@@ -39,45 +39,11 @@ function changePages(){
 
 }
 
-function changePagesFromButtons(){
-    const tournamentBtn = document.querySelector("#tournamentBtn")
-    const leaderBtn = document.querySelector("#leaderboardBtn")
-
-    tournamentBtn.addEventListener("click",()=>{
-        window.location.replace("/src/pages/tournaments.html")
-    })
-
-    leaderBtn.addEventListener("click",()=>{
-        window.location.replace("/src/pages/leaderboards.html")
-    })
-}
 
 
 
-showMenuMobile()
+
+//showMenuMobile()
 changePages()
-changePagesFromButtons()
 
-async function gerarPuzzle(){
-    const mainList = document.querySelector('.main')
 
-    const puzzleDoDia = await getPuzzles()
-
-    function createElement() {
-        let li = document.createElement('li')
-        let title = document.createElement('h2')
-        let img = document.createElement('img')
-        let link = document.createElement('a')
-       
-        link.setAttribute('href',puzzleDoDia.url)
-        link.setAttribute('target','_blank')
-        link.innerHTML = 'Teste seu conhecimento com o puzzle do dia' 
-        title.innerText = puzzleDoDia.title
-        img.src = puzzleDoDia.image
-    
-        mainList.append(li)
-        li.append(link,title,img)
-    }
-    createElement()
-}
-gerarPuzzle()
