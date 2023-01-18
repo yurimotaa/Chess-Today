@@ -88,59 +88,63 @@ function renderSelectedValue(){
         if(select.value === 'battle'){
             ul.innerHTML = ''
             renderLeaderBoard(leaderboarderBattle)
-            h1.innerText = `Leaderboard ${select.value}`
+            h1.innerText = `Leaderboard Battle`
         } else if(select.value === 'daily'){
             ul.innerHTML = ''
             renderLeaderBoard(leaderboarderDaily)
-            h1.innerText = `Leaderboard ${select.value}`
+            h1.innerText = `Leaderboard Daily`
         } else if(select.value === 'daily960'){
             ul.innerHTML = ''
             renderLeaderBoard(leaderboarderDaily960)
-            h1.innerText = `Leaderboard ${select.value}`
+            h1.innerText = `Leaderboard Daily 960`
         } else if(select.value === 'live_blitz'){
             ul.innerHTML = ''
             renderLeaderBoard(leaderboarderLiveBlitz)
-            h1.innerText = `Leaderboard ${select.value}`
+            h1.innerText = `Leaderboard Blitz`
         } else if(select.value === 'live_blitz960'){
             ul.innerHTML = ''
             renderLeaderBoard(leaderboarderLiveBlitz960)
-            h1.innerText = `Leaderboard ${select.value}`
+            h1.innerText = `Leaderboard Blitz 960`
         } else if(select.value === 'live_bughouse'){
             ul.innerHTML = ''
             renderLeaderBoard(leaderboarderLiveBughouse)
-            h1.innerText = `Leaderboard ${select.value}`
+            h1.innerText = `Leaderboard Bug House`
         } else if(select.value === 'live_bullet'){
             ul.innerHTML = ''
             renderLeaderBoard(leaderboarderLiveBullet)
-            h1.innerText = `Leaderboard ${select.value}`
+            h1.innerText = `Leaderboard Bullet`
         } else if(select.value === 'live_crazyhouse'){
             ul.innerHTML = ''
             renderLeaderBoard(leaderboarderLiveCrazyHouse)
-            h1.innerText = `Leaderboard ${select.value}`
+            h1.innerText = `Leaderboard Crazy House`
         } else if(select.value === 'live_kingofthehill'){
             ul.innerHTML = ''
             renderLeaderBoard(leaderboarderLivekingofthehill)
-            h1.innerText = `Leaderboard ${select.value}`
+            h1.innerText = `Leaderboard King of the hill`
         } else if(select.value === 'live_rapid'){
             ul.innerHTML = ''
             renderLeaderBoard(leaderboarderLiveRapid)
-            h1.innerText = `Leaderboard ${select.value}`
+            h1.innerText = `Leaderboard Rapid`
         } else if(select.value === 'live_threecheck'){
             ul.innerHTML = ''
             renderLeaderBoard(leaderboarderLiveThreecheck)
-            h1.innerText = `Leaderboard ${select.value}`
+            h1.innerText = `Leaderboard Threecheck`
         } else if(select.value === 'rush'){
             ul.innerHTML = ''
             renderLeaderBoard(leaderboarderRush)
-            h1.innerText = `Leaderboard ${select.value}`
+            h1.innerText = `Leaderboard Rush`
         } else if(select.value === 'tactics'){
             ul.innerHTML = ''
             renderLeaderBoard(leaderboarderTactics)
-            h1.innerText = `Leaderboard ${select.value}`
+            h1.innerText = `Leaderboard Tactics`
         }
-
     })
 
+    const img = document.querySelector('header > img')
+
+    img.addEventListener('click', ()=>{
+        window.location.replace('/')
+    })
 }
 
 renderLeaderBoard(leaderboarderBattle)
