@@ -1,7 +1,8 @@
+
 body{
     background-image:url(../assets/Backgroundimage3.png) ;
     background-size: 100vw 100vh;
-     
+    background-color: rgba(49, 46, 43, 1);
    
     
     
@@ -95,3 +96,4 @@ section{
 
 
 }
+

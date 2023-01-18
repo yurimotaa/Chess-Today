@@ -6,8 +6,10 @@
 
 header{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 1.5rem;
+    gap: 1rem;
+    align-items: center;
    
 }
 
@@ -15,7 +17,11 @@ header{
    
     list-style: none;
     font-family: var(--font-family1);
-    display: none;
+    display: flex;
+    
+    gap: 2rem;
+     color: var(--color-secundary);
+
 }
 
 #nav.active .nav__links{
@@ -47,15 +53,7 @@ header{
 
 }
 
-#nav.active .dropdownBtn{
-    display: none;
-}
-.closeBtn{
-    display: none;
-}
-#nav.active .closeBtn{
-    display: block;
-}
+
 
 @media(min-width:769px){
     .btn__mobile{

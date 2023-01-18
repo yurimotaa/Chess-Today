@@ -19,7 +19,7 @@ function toggleMenu(){
 function changePages(){
     const clubsBtn = document.querySelector("#clubsBtn")
     const puzzlesBtn = document.querySelector("#puzzlesBtn")
-    
+    const aboutBtn = document.querySelector("#aboutBtn")
     const homeBtn = document.querySelector("#homeBtn")
 
     clubsBtn.addEventListener("click", ()=>{
@@ -30,30 +30,20 @@ function changePages(){
         window.location.replace("/src/pages/puzzle.html")
     })
 
- 
+    aboutBtn.addEventListener("click", ()=>{
+        window.location.replace("/src/pages/about.html")
+    })
     homeBtn.addEventListener("click", ()=>{
         window.location.replace("/")
     })
 
 }
 
-function changePagesFromButtons(){
-    const tournamentBtn = document.querySelector("#tournamentBtn")
-    const leaderBtn = document.querySelector("#leaderboardBtn")
-
-    tournamentBtn.addEventListener("click",()=>{
-        window.location.replace("/src/pages/tournaments.html")
-    })
-
-    leaderBtn.addEventListener("click",()=>{
-        window.location.replace("/src/pages/leaderboard.html")
-    })
-}
 
 
 
-       
 
-showMenuMobile()
+//showMenuMobile()
 changePages()
-changePagesFromButtons()
+
+

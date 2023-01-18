@@ -1,0 +1,196 @@
+/* Reset do CSS */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Import da fonte */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+/* Estilização da página */
+
+body{
+    background-image: url(/src/assets/shutterstock_1941623965\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    font-family: 'Inter', sans-serif;
+}
+
+
+header{
+    padding: 30px 10px;
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+header > a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 15px;
+
+    color: white;
+}
+
+section > select{
+    padding: 10px;
+    width: 200px;
+
+    background-color: #EEEED2;
+    color: #7FA650;
+
+    font-weight: bold;
+}
+
+section > h1{
+    
+    color: #7FA650;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+ul{
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    flex-direction: column;
+    
+    height: 650px;
+    overflow-y: scroll;
+}
+
+li{
+    display: flex;
+    flex-direction: column;
+    border: solid 1px #EEEED2;
+    width: 200px;
+    max-width: 95%;
+    height: 300px;
+    padding: 10px;
+    gap: 15px;
+
+    background-color: #EEEED2;
+    
+    font-size: 16px;
+}
+
+li >h2, h3{
+    color: #7FA650;
+    font-weight: 700;
+
+}
+
+li > p{
+    color: black;
+    font-weight: 700;
+}
+
+li > a{
+    text-decoration: none;
+    color: #5c1219;
+
+    font-weight: bold;
+}
+
+footer{
+    background-color: blueviolet;
+    padding: 10px;
+}
+
+@media (min-width: 1000px){
+    body{
+        background-image: url(/src/assets/shutterstock_1941623965\ 2.png);
+    }
+    section{
+        display: flex;
+        
+        padding: 10px;
+        gap: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section > select{
+        width: 600px;
+    }
+
+    ul{
+
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 950px;
+        height: 1024px;
+
+    }
+
+    li{
+        flex-direction: row;
+        align-items: center;
+        width: 900px;
+        height: 70px;
+    }
+
+    li >h2, h3{
+        width: 240px;
+    }
+
+    li > p{
+        width: 230px;
+    }
+}
