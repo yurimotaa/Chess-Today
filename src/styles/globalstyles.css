@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Josefin+Sans:wght@300;400;500;600;700&display=swap');
+:root{
+    --color-primary:#7FA650;
+    --color-secundary: #EEEED2;
+
+    --color-grey1: #232323;
+    --color-grey2:#312E2B;
+    --color-grey3: #262421;
+    --color-grey4: #26211B;
+
+    --font-family1: 'Inter', sans-serif;
+    --font-family2: 'Josefin Sans', sans-serif;
+    
+}
