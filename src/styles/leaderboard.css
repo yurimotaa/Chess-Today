@@ -1,67 +1,11 @@
-/* Reset do CSS */
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-
-/* Import da fonte */
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-
-
 /* Estilização da página */
 
 body{
-    background-image: url(/src/assets/shutterstock_1941623965\ 1.png);
+    background-image: url(/src/assets/Backgroundimage3-mini.png);
     background-size: cover;
     background-repeat: no-repeat;
 
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-family1);
 }
 
 
@@ -70,12 +14,17 @@ header{
     gap: 50px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 header > a{
     text-decoration: none;
     cursor: pointer;
-    color: white;
+    color: var(--color-secundary);
+}
+
+header > img{
+    cursor: pointer;
 }
 
 section{
@@ -85,22 +34,22 @@ section{
     padding: 10px;
     gap: 15px;
 
-    color: white;
 }
 
 section > select{
     padding: 10px;
-    width: 200px;
+    width: 300px;
 
-    background-color: #EEEED2;
-    color: #7FA650;
+    background-color: var(--color-secundary);
+    color: var(--color-primary);
 
     font-weight: bold;
+    font-size: 16px;
 }
 
 section > h1{
     
-    color: #7FA650;
+    color: var(--color-primary);
     font-size: 26px;
     font-weight: bold;
 }
@@ -113,25 +62,35 @@ ul{
     
     height: 650px;
     overflow-y: scroll;
+
+    scrollbar-color: var(--color-secundary);
+}
+
+ul::-webkit-scrollbar{
+    background-color: var(--color-secundary);
+}
+
+ul::-webkit-scrollbar-thumb{
+    background: var(--color-primary);
 }
 
 li{
     display: flex;
     flex-direction: column;
-    border: solid 1px #EEEED2;
+    border: solid 1px var(--color-secundary);
     width: 200px;
     max-width: 95%;
     height: 300px;
     padding: 10px;
     gap: 15px;
 
-    background-color: #EEEED2;
+    background-color: var(--color-secundary);
     
     font-size: 16px;
 }
 
 li >h2, h3{
-    color: #7FA650;
+    color: var(--color-primary);
     font-weight: 700;
 
 }
@@ -148,14 +107,9 @@ li > a{
     font-weight: bold;
 }
 
-footer{
-    background-color: blueviolet;
-    padding: 10px;
-}
-
 @media (min-width: 1000px){
     body{
-        background-image: url(/src/assets/shutterstock_1941623965\ 2.png);
+        background-image: url(/src/assets/Backgroundimage3.png);
     }
     section{
         display: flex;
@@ -167,7 +121,7 @@ footer{
     }
 
     section > select{
-        width: 600px;
+        width: 800px;
     }
 
     ul{
