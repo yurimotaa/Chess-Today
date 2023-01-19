@@ -15,6 +15,8 @@ async function gerarPuzzle(){
         title.innerText = puzzleDoDia.title
         img.src = puzzleDoDia.image
     
+        li.classList.add('container')
+
         mainList.append(li)
         li.append(link,title,img)
     }
@@ -23,3 +25,23 @@ async function gerarPuzzle(){
 
 
 gerarPuzzle()
+
+function changePages(){
+    const clubsBtn = document.querySelector("#clubsBtn")
+    const puzzlesBtn = document.querySelector("#puzzlesBtn")
+    const homeBtn = document.querySelector("#homeBtn")
+
+    clubsBtn.addEventListener("click", ()=>{
+        window.location.replace("/src/pages/clubs.html")
+    })
+
+    puzzlesBtn.addEventListener("click", ()=>{
+        window.location.replace("/src/pages/puzzle.html")
+    })
+
+    homeBtn.addEventListener("click", ()=>{
+        window.location.replace("/")
+    })
+
+}
+changePages()

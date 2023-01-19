@@ -1,13 +1,30 @@
+.main{
+    display: flex;
+    height: 1599px;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    height: 503px;
+    gap: 13px;
+}
 h2{
     color: var(--color-secundary);
     font-family: var(--font-family2);
+    font-size: 57px;
     
 }
 a{
     color:  var(--color-secundary);
-    
+    font-size: 49px;
 }
 
 @media(min-width: 769px){
-    
+    .main{
+        height: 100%;
+    }
 }
