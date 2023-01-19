@@ -1,8 +1,3 @@
-header {
-    margin-top: 20px;
-    margin-bottom: 65px;
-}
-
 body {
     background-color: var(--color-grey2);
     color: var(--color-secundary);
@@ -19,8 +14,9 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 54px;
+    gap: 44px;
     margin-bottom: 30px;
+    margin-top: 70px;
 }
 
 .mainTextBox > p {
@@ -98,22 +94,20 @@ a {
     padding: 3px 20px;
     width: fit-content;
     cursor: pointer;
+    font-size: 1rem;
 }
 
-::-webkit-scrollbar {
-    background-color: var(--color-grey2);
-    width: 11px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--color-primary);
+#join:hover {
+    box-shadow: 5px 5px 10px 2px var(--color-grey4);
+    transition: .3s;
 }
 
 @media (min-width: 769px) {
 
-    header {
-        margin-top: 5px;
-        margin-bottom: 65px;
+    .nav__container {
+        width: 50%;
+        display: flex;
+        justify-content: center;
     }
 
     .nav__links > li:hover {

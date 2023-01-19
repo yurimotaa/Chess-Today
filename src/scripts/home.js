@@ -3,7 +3,6 @@ function changePagesFromButtons(){
     const leaderBtn = document.querySelector("#leaderboardBtn")
     
     tournamentBtn.addEventListener("click",()=>{
-        
         window.location.replace("/src/pages/tournament.html")
     })
 

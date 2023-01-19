@@ -61,17 +61,17 @@ function createCardsLeaderBoard(data, country){
     const url = document.createElement('a')
     if(!data.name){
         li.append(username, rank, countryProfile, url)
-        username.innerText = `Nome: ${data.username}`
+        username.innerText = `${data.username}`
     } else {
         li.append(name, rank, countryProfile, url)
-        name.innerText = `Nome: ${data.name}`
+        name.innerText = `${data.name}`
     }
-    rank.innerText = `Posição no Rank: ${data.rank}`
+    rank.innerText = `#${data.rank}`
     status.innerText = `Status: ${data.status[0].toUpperCase() + data.status.substring(1)}`
     score.innerText = `Pontuação atual: ${data.score}`
     id.innerText = `Id do jogador: ${data.player_id}`
     countryProfile.innerText = `País: ${country}`
-    url.innerText = `Link para o perfil`
+    url.innerText = `Perfil`
     
     url.href = data.url
     url.target = 'blank'
@@ -138,12 +138,6 @@ function renderSelectedValue(){
             renderLeaderBoard(leaderboarderTactics)
             h1.innerText = `Leaderboard Tactics`
         }
-    })
-
-    const img = document.querySelector('header > img')
-
-    img.addEventListener('click', ()=>{
-        window.location.replace('/')
     })
 }
 
