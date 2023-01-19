@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS - clubs.css, globalStyles e Reset -->
-    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/globalstyles.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/clubs.css">
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,15 +16,17 @@
     <title>Clubes</title>
 </head>
 <body>
+
     <header>
-        <nav>
-            <a href="">Home</a>
-            <a href="">Torneios</a>
-            <a href="">Leaderboard</a>
-            <a href="">Clubes</a>
-            <a href="">Puzzles</a>
+        <nav id="nav" class="nav__container">
+            <ul class="nav__links">
+                <li id="homeBtn">Home</li>
+                <li id="clubsBtn">Clubes</li>
+                <li id="puzzlesBtn">Puzzles</li>
+            </ul>
         </nav>
     </header>
+
     <main>
         <div class="mainTextBox">
             <p>Pratique xadrez e faça amizades participando do clube que tem mais a ver com você!</p>

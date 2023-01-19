@@ -14,7 +14,7 @@ const getClubs = async (clubId) => {
 }
 
 const devs = await getClubs('chess-com-developer-community')
-const cats = await getClubs('the-cats')
+const cats = await getClubs('the-cat-appreciation-society')
 const capybaras = await getClubs('capivaras-nervosos')
 const kenzies = await getClubs('chess-kenzie')
 const womanlyClub = await getClubs('womanly-chess')
