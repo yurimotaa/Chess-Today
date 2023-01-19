@@ -30,9 +30,7 @@ function changePages(){
         window.location.replace("/src/pages/puzzle.html")
     })
 
-    aboutBtn.addEventListener("click", ()=>{
-        window.location.replace("/src/pages/about.html")
-    })
+
     homeBtn.addEventListener("click", ()=>{
         window.location.replace("/")
     })
