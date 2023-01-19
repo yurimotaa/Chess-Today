@@ -5,23 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/styles/reset.css">
     <link rel="stylesheet" href="/src/styles/globalstyles.css">
+    <link rel="stylesheet" href="/src/styles/header.css">
     <link rel="stylesheet" href="/src/styles/tournament.css">
     <script type="module" src="/src/scripts/tournament.js" defer></script>
+    <link rel="shortcut icon" href="../assets/medal.svg" type="image/x-icon">
     <title>Torneios</title>
 </head>
 <body>
     <header>
-        <div class="h_box">
-            <button id="hbtn1" class="Hbtn">Home</button>
-            <button id="hbtn2" class="Hbtn">Clubes</button>
-            <button id="hbtn3" class="Hbtn">Puzzles</button>
-            <button id="hbtn4" class="Hbtn">Leaderboard</button>
-        </div>
+        <nav id="nav" class="nav__container">
+            <ul class="nav__links">
+                <li id="hbtn1">Home</li>
+                <li id="hbtn2">Clubes</li>
+                <li id="hbtn3">Puzzles</li>
+            </ul>
+        </nav>
     </header>
     <main>
         <div class="invite"> 
-            <h2>Acompanhe campeonatos mundiais de Xadrez 960!</h2>
+            <h2>Acompanhe campeonatos mundiais de <span class="openModal">Xadrez960</span>!</h2>
         </div>
         <div class="torneio1">
             <ul class="t_box">
@@ -32,5 +36,6 @@
             </ul>
         </div>
     </main>
+
 </body>
 </html>

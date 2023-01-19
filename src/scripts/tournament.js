@@ -23,28 +23,23 @@ const tbox = document.createElement('div')
 tbox.classList.add('divli')
 tbox.append(t1isOficial,t1rules)
 
-
 tournamentLi.classList.add('liGeral')
 t1url.classList.add('btn1')
 t1name.innerText = tournament1.name
 t1url.innerHTML = 'Ir para Torneio'
 t1description.innerText = "Este é o 18th Torneio Chess960 Quick Knockouts Chess.com. O requisito para um torneio Quick Knockouts é que seu tempo médio por jogada seja inferior a 12 horas. Você tem 1 dia por movimento!"
 t1isOficial.innerText = `Torneio Oficial`
-t1rules.innerText =  `Regras:${tournament1.settings.rules}` 
+t1rules.innerText =  `Regras: ${tournament1.settings.rules}` 
 
 tournamentList.append(tournamentLi)
 tournamentLi.append(t1name,t1url,t1description,tbox)
-
 
 t1url.addEventListener('click',(event) => {
     event.preventDefault()
     window.open("https://www.chess.com/tournament/18th-chess-com-chess960-quick-knockouts-under-1000", '_blank')
 })
-
 }
 renderizarT1(tournament1)
-
-
 
 async function renderizarT2(tournament2){
 
@@ -64,24 +59,17 @@ t2name.innerText = tournament2.name
 t2url.innerHTML = 'Ir para Torneio'
 t2description.innerText = "Este é o 18th Torneio Chess960 Quick Knockouts Chess.com. O requisito para um torneio Quick Knockouts é que seu tempo médio por jogada seja inferior a 12 horas. Você tem 1 dia por movimento!"
 t2isOficial.innerText = `Torneio Oficial`
-t2rules.innerText =  `Regras:${tournament2.settings.rules}` 
+t2rules.innerText =  `Regras: ${tournament2.settings.rules}` 
     
 tournamentList.append(tournamentLi)
 tournamentLi.append(t2name,t2url,t2description,tbox)
     
-
 t2url.addEventListener('click',(event) => {
     event.preventDefault()
     window.open("https://www.chess.com/tournament/18th-chess-com-chess960-quick-knockouts-1200-1399", '_blank')
 })
-
-
-
 }
 renderizarT2(tournament2)
-
-
-
 
 async function renderizarT3(tournament3){
 
@@ -101,21 +89,17 @@ t3name.innerText = tournament3.name
 t3url.innerHTML = 'Ir para Torneio'
 t3description.innerText = "Este é o 18th Torneio Chess960 Quick Knockouts Chess.com. O requisito para um torneio Quick Knockouts é que seu tempo médio por jogada seja inferior a 12 horas. Você tem 1 dia por movimento!"
 t3isOficial.innerText = `Torneio Oficial`
-t3rules.innerText =  `Regras:${tournament3.settings.rules}` 
+t3rules.innerText =  `Regras: ${tournament3.settings.rules}` 
         
 tournamentList.append(tournamentLi)
 tournamentLi.append(t3name,t3url,t3description,tbox)
   
-
 t3url.addEventListener('click',(event) => {
     event.preventDefault()
     window.open("https://www.chess.com/tournament/18th-chess-com-chess960-quick-knockouts-1600-1799", '_blank')
 })
-
-
 }
 renderizarT3(tournament3)
-
 
 async function renderizarT4(tournament4){
 
@@ -135,12 +119,10 @@ t4name.innerText = tournament4.name
 t4url.innerHTML = 'Ir para Torneio'
 t4description.innerText = "Este é o 18th Torneio Chess960 Quick Knockouts Chess.com. O requisito para um torneio Quick Knockouts é que seu tempo médio por jogada seja inferior a 12 horas. Você tem 1 dia por movimento!"
 t4isOficial.innerText = `Torneio Oficial`
-t4rules.innerText =  `Regras:${tournament4.settings.rules}` 
+t4rules.innerText =  `Regras: ${tournament4.settings.rules}` 
             
 tournamentList.append(tournamentLi)
 tournamentLi.append(t4name,t4url,t4description,tbox)
-   
-
 
 t4url.addEventListener('click',(event) => {
     event.preventDefault()
@@ -149,8 +131,6 @@ t4url.addEventListener('click',(event) => {
 
 }
 renderizarT4(tournament4)
-
-
 
 async function renderizarT5(tournament5){
 
@@ -170,11 +150,10 @@ t5name.innerText = tournament5.name
 t5url.innerHTML = 'Ir para Torneio'
 t5description.innerText = "Este é o 18th Torneio Chess960 Quick Knockouts Chess.com. O requisito para um torneio Quick Knockouts é que seu tempo médio por jogada seja inferior a 12 horas. Você tem 1 dia por movimento!"
 t5isOficial.innerText = `Torneio Oficial`
-t5rules.innerText =  `Regras:${tournament5.settings.rules}` 
+t5rules.innerText =  `Regras: ${tournament5.settings.rules}` 
                 
 tournamentList.append(tournamentLi)
 tournamentLi.append(t5name,t5url,t5description,tbox)
-
 
 t5url.addEventListener('click',(event) => {
     event.preventDefault()
@@ -183,8 +162,6 @@ t5url.addEventListener('click',(event) => {
 
 }
 renderizarT5(tournament5)
-
-
 
 async function renderizarT6(tournament6){
 
@@ -204,12 +181,10 @@ t6name.innerText = tournament6.name
 t6url.innerHTML = 'Ir para Torneio'
 t6description.innerText = "Este é o 18th Torneio Chess960 Quick Knockouts Chess.com. O requisito para um torneio Quick Knockouts é que seu tempo médio por jogada seja inferior a 12 horas. Você tem 1 dia por movimento!"
 t6isOficial.innerText = `Torneio Oficial`
-t6rules.innerText =  `Regras:${tournament6.settings.rules}` 
+t6rules.innerText =  `Regras: ${tournament6.settings.rules}` 
                     
 tournamentList.append(tournamentLi)
 tournamentLi.append(t6name,t6url,t6description,tbox)
-
-
 
 t6url.addEventListener('click',(event) => {
     event.preventDefault()
@@ -218,8 +193,6 @@ t6url.addEventListener('click',(event) => {
 
 }
 renderizarT6(tournament6)
-
-
 
 async function renderizarT7(tournament7){
 
@@ -239,29 +212,23 @@ t7name.innerText = tournament7.name
 t7url.innerHTML = 'Ir para Torneio'
 t7description.innerText = "Este é o 18th Torneio Chess960 Quick Knockouts Chess.com. O requisito para um torneio Quick Knockouts é que seu tempo médio por jogada seja inferior a 12 horas. Você tem 1 dia por movimento!"
 t7isOficial.innerText = `Torneio Oficial`
-t7rules.innerText =  `Regras:${tournament7.settings.rules}` 
+t7rules.innerText =  `Regras: ${tournament7.settings.rules}` 
                         
 tournamentList.append(tournamentLi)
 tournamentLi.append(t7name,t7url,t7description,tbox)
- 
-
 
 t7url.addEventListener('click',(event) => {
     event.preventDefault()
     window.open("https://www.chess.com/tournament/18th-chess-com-chess960-quick-knockouts-over-2000", '_blank')
 })
-
 }
-renderizarT7(tournament7)
-
-                
+renderizarT7(tournament7)          
 
 const goHome = document.querySelector('#hbtn1')
 const goClubs = document.querySelector('#hbtn2')
 const goPuzzles = document.querySelector('#hbtn3')
-const goLeaderboard = document.querySelector('#hbtn4')
 
-function redirectBtn(){
+function redirectBtn() {
 
     goHome.addEventListener('click',(event) => {
         event.preventDefault()
@@ -274,10 +241,6 @@ function redirectBtn(){
     goPuzzles.addEventListener('click',(event) => {
         event.preventDefault()
         window.location.replace("/src/pages/puzzle.html")
-    })
-    goLeaderboard.addEventListener('click', (event) => {
-        event.preventDefault()
-        window.location.replace("/src/pages/leaderboard.html")
     })
 }
 redirectBtn()

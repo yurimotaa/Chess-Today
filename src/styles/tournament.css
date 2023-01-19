@@ -1,165 +1,145 @@
-
-body{
-    width: 100vw;
-    height: 100vh;
-    font-family: 'Inter', sans-serif;
+body {
     background-color: var(--color-grey2);
+    color: var(--color-secundary);
+    font-family: var(--font-family1);
 }
-header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-main{
 
-    height: 90%;
-}
-.invite{
-    margin-top: 80px;
-    margin-left: 20px;
-}
-.invite h2{
+a {
+    text-decoration: none;
     color: var(--color-secundary);
 }
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.invite {
+    margin-top: 44px;
+}
+
+.invite h2 {
+    color: var(--color-secundary);
+    font-weight: 700;
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+}
+
+ul > li > h1 {
+    align-self: center;
+    width: fit-content;
+    justify-self: center;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 13px;
+}
+
+.t_box {
+    height: 200px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+li > img {
+    width: 35px;
+}
+
 .Hbtn {
     color: var(--color-secundary);
     background-color: var(--color-grey2);
     border: none;
+}
 
-}
-.t_box{
-    padding: 0;
-    list-style: none;
-}
-.liHeader{
+.liHeader {
     display: flex;
+    justify-content: center;
     background-color: var(--color-primary);
-    margin-top: 65px;
+    margin-top: 30px;
+    gap: 13px;
 }
-.liGeral{
+
+.liGeral {
     background-color: var(--color-grey1);
     border-bottom: 1px solid var(--color-primary);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 15px;
+    gap: 20px;
 }
-.liGeral h2{
+
+.liGeral h2, p, h3, h4 {
     color: var(--color-secundary);
+    text-align: center;
+    line-height: 24px;
+    width: 80%;
 }
-.liGeral p {
-    color: var(--color-secundary);
-}
-.liGeral h3 {
-    color: var(--color-secundary);
-}
-.liGeral h4 {
-    color: var(--color-secundary);
-}
-.btn1{
-    width: 150px;
-    height: 48px;
+
+.btn1 {
     color: var(--color-secundary);
     background-color: var(--color-primary);
     font-family: 'Inter', sans-serif;
     border: none;
+    font-size: 1rem;
+    padding: 15px;
+    font-weight: 700;
+    cursor: pointer;
 }
 
+@media (min-width: 769px) {
 
-
-
-
-
-
-
-@media screen and (min-width: 768px){
-
-body{
-background-color: var(--color-grey2);
+    .nav__container {
+        width: 50%;
+        display: flex;
+        justify-content: center;
     }
-header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 75px;
-}
 
-main{
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 50px;
-}
+    .nav__links > li:hover {
+        color: #7FA650;
+    }
 
-.invite{
-    margin-top: 130px
-    
-}
-.Hbtn {
-    color: var(--color-secundary);
-    background-color: var(--color-grey2);
-    border: none;
-    cursor: pointer;
+    main {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+    }
 
-}
-.torneio1{
-    width: 1128px;
-    height: 865px;
-    background-color: var(--color-grey1);
-}
-.t_box{
-    width: 1128px;
-    height: 865px;
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
-    overflow: auto;
-}
-.liGeral{
-    height: 260px;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid var(--color-primary);
-}
-.liHeader{
-    height: 80px;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    align-items: center;
-    background-color: var(--color-primary);
-    margin-top: 0px;
-}
-.liGeral h2{
-    color: var(--color-secundary);
-}
-.liGeral p {
-    color: var(--color-secundary);
-    margin-left: 13px;
+    .invite {
+        margin-top: 44px;
+    }
 
-}
-.liGeral h3 {
-    color: var(--color-secundary);
-}
-.liGeral h4 {
-    color: var(--color-secundary);
-}
-.divli{
-    display: flex;
-    gap: 300px;
-}
-.btn1{
-    width: 150px;
-    height: 48px;
-    color: var(--color-secundary);
-    background-color: var(--color-primary);
-    cursor: pointer;
-}
+    .invite > h2 {
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+
+    .Hbtn {
+        color: var(--color-secundary);
+        background-color: var(--color-grey2);
+        border: none;
+        cursor: pointer;
+    }
+
+    .t_box {
+        width: 90%;
+        margin: 0 auto;
+        height: 400px;
+        overflow: auto;
+    }
+
+    .liHeader {
+        margin-top: 0px;
+    }
+
+    .divli {
+        display: flex;
+        gap: 300px;
+    }
 
 }

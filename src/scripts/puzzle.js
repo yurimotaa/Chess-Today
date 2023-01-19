@@ -11,7 +11,7 @@ async function gerarPuzzle(){
        
         link.setAttribute('href',puzzleDoDia.url)
         link.setAttribute('target','_blank')
-        link.innerHTML = 'Teste seu conhecimento com o puzzle do dia' 
+        link.innerHTML = 'Teste seu conhecimento com o puzzle do dia aqui!' 
         title.innerText = puzzleDoDia.title
         img.src = puzzleDoDia.image
     

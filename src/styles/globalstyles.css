@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Josefin+Sans:wght@300;400;500;600;700&display=swap');
-:root{
+
+:root {
     --color-primary:#7FA650;
     --color-secundary: #EEEED2;
 
@@ -10,5 +11,13 @@
 
     --font-family1: 'Inter', sans-serif;
     --font-family2: 'Josefin Sans', sans-serif;
-    
+}
+
+::-webkit-scrollbar {
+    background-color: var(--color-grey2);
+    width: 11px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
 }
