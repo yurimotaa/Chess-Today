@@ -255,3 +255,29 @@ t7url.addEventListener('click',(event) => {
 renderizarT7(tournament7)
 
                 
+
+const goHome = document.querySelector('#hbtn1')
+const goClubs = document.querySelector('#hbtn2')
+const goPuzzles = document.querySelector('#hbtn3')
+const goLeaderboard = document.querySelector('#hbtn4')
+
+function redirectBtn(){
+
+    goHome.addEventListener('click',(event) => {
+        event.preventDefault()
+        window.location.replace("/index.html")
+    })
+    goClubs.addEventListener('click', (event) => {
+        event.preventDefault()
+        window.location.replace("/src/pages/clubs.html")
+    })
+    goPuzzles.addEventListener('click',(event) => {
+        event.preventDefault()
+        window.location.replace("/src/pages/puzzle.html")
+    })
+    goLeaderboard.addEventListener('click', (event) => {
+        event.preventDefault()
+        window.location.replace("/src/pages/leaderboard.html")
+    })
+}
+redirectBtn()

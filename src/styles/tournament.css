@@ -3,7 +3,7 @@ body{
     width: 100vw;
     height: 100vh;
     font-family: 'Inter', sans-serif;
-    background-color: #312E2B;
+    background-color: var(--color-grey2);
 }
 header{
     display: flex;
@@ -19,11 +19,11 @@ main{
     margin-left: 20px;
 }
 .invite h2{
-    color: white;
+    color: var(--color-secundary);
 }
 .Hbtn {
-    color: white;
-    background-color: #312E2B;
+    color: var(--color-secundary);
+    background-color: var(--color-grey2);
     border: none;
 
 }
@@ -33,34 +33,34 @@ main{
 }
 .liHeader{
     display: flex;
-    background-color: #7FA650;
+    background-color: var(--color-primary);
     margin-top: 65px;
 }
 .liGeral{
-    background-color: #232323;
-    border-bottom: 1px solid #7FA650;
+    background-color: var(--color-grey1);
+    border-bottom: 1px solid var(--color-primary);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .liGeral h2{
-    color: white;
+    color: var(--color-secundary);
 }
 .liGeral p {
-    color: white;
+    color: var(--color-secundary);
 }
 .liGeral h3 {
-    color: white;
+    color: var(--color-secundary);
 }
 .liGeral h4 {
-    color: white;
+    color: var(--color-secundary);
 }
 .btn1{
     width: 150px;
     height: 48px;
-    color: white;
-    background-color: #7FA650;
+    color: var(--color-secundary);
+    background-color: var(--color-primary);
     font-family: 'Inter', sans-serif;
     border: none;
 }
@@ -75,7 +75,7 @@ main{
 @media screen and (min-width: 768px){
 
 body{
-background-color: #312E2B;
+background-color: var(--color-grey2);
     }
 header{
     display: flex;
@@ -99,8 +99,8 @@ main{
     
 }
 .Hbtn {
-    color: white;
-    background-color: #312E2B;
+    color: var(--color-secundary);
+    background-color: var(--color-grey2);
     border: none;
     cursor: pointer;
 
@@ -108,7 +108,7 @@ main{
 .torneio1{
     width: 1128px;
     height: 865px;
-    background-color: #232323;
+    background-color: var(--color-grey1);
 }
 .t_box{
     width: 1128px;
@@ -125,7 +125,7 @@ main{
     align-content: center;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid #7FA650;
+    border-bottom: 1px solid var(--color-primary);
 }
 .liHeader{
     height: 80px;
@@ -133,22 +133,22 @@ main{
     flex-direction: row;
     align-content: center;
     align-items: center;
-    background-color: #7FA650;
+    background-color: var(--color-primary);
     margin-top: 0px;
 }
 .liGeral h2{
-    color: white;
+    color: var(--color-secundary);
 }
 .liGeral p {
-    color: white;
+    color: var(--color-secundary);
     margin-left: 13px;
 
 }
 .liGeral h3 {
-    color: white;
+    color: var(--color-secundary);
 }
 .liGeral h4 {
-    color: white;
+    color: var(--color-secundary);
 }
 .divli{
     display: flex;
@@ -157,8 +157,8 @@ main{
 .btn1{
     width: 150px;
     height: 48px;
-    color: white;
-    background-color: #7FA650;
+    color: var(--color-secundary);
+    background-color: var(--color-primary);
     cursor: pointer;
 }
 
