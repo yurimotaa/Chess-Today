@@ -1,0 +1,145 @@
+body {
+    background-color: var(--color-grey2);
+    color: var(--color-secundary);
+    font-family: var(--font-family1);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-secundary);
+}
+
+header {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    padding: 1.5rem;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 44px;
+}
+
+header > img {
+    cursor: pointer;
+}
+
+.bestText {
+    margin-bottom: 30px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+    position: relative;
+}
+
+section > select{
+    width: 80%;
+}
+
+section > h1 {
+    color: var(--color-primary);
+    font-size: 26px;
+    font-weight: bold;
+}
+
+ul {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    height: 427px;
+    overflow-y: auto;
+    width: 80%;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+    padding: 15px 0px;
+    background-color: var(--color-secundary);
+    font-size: 1rem;
+    align-items: center;
+}
+
+li > h2, h3 {
+    color: var(--color-primary);
+    font-weight: 700;
+
+}
+
+li > p {
+    color: var(--color-grey1);
+    font-weight: 700;
+}
+
+li > a {
+    text-decoration: none;
+    color: #5c1219;
+    font-weight: bold;
+}
+
+#leaderboards {
+    padding: 20px 0px;
+    background-color: var(--color-primary);
+    color: var(--color-secundary);
+    font-family: var(--font-family1);
+    font-weight: 700;
+    text-align: center;
+    outline: none;
+    border: none;
+    font-size: 1.125rem;
+}
+
+@media (min-width: 1000px) {
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    header > a {
+        font-size: 1.25rem;
+        cursor: pointer;
+    }
+
+    ul {
+        overflow-x: hidden;
+        height: 400px;
+    }
+
+    li {
+        flex-direction: row;
+        padding: 24px;
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+    li >h2, h3 {
+        width: 240px;
+        width: 90px;
+    }
+
+    li > p {
+        width: 230px;
+    }
+
+    .bestText {
+        font-size: 1.625rem;
+    }
+
+    #leaderboards {
+        font-size: 2.1rem;
+    }
+}
